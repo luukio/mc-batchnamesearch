@@ -1,0 +1,17 @@
+{
+  "name": "mc-namesearch",
+  "version": "1.0.0",
+  "description": "Uses a dictionary array to search for available minecraft names",
+  "main": "checkExists.js",
+  "author": "luukio <github@luuk.io>",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "node-fetch": "^2.6.1",
+    "readline-sync": "^1.4.10"
+  },
+  "scripts": {
+    "start": "node checkExists.js",
+    "deepsearch": "node checkDates.js"
+  }
+}
