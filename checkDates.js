@@ -3,6 +3,7 @@ const readline = require('readline-sync');
 const fetch = require("node-fetch");
 let availableNames = [];
 
+// PUT YOUR NEW JSON FILE IN THE FOLLOWING LINE!
 let dictionary = require("./results_11-10-2020/availableNames.json");
 
 console.log("This script runs a username every 3 seconds, make sure your computer stays on.");

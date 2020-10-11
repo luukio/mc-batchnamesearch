@@ -1,5 +1,5 @@
 {
-  "name": "mc-namesearch",
+  "name": "mc-batchnamesearch",
   "version": "1.0.0",
   "description": "Uses a dictionary array to search for available minecraft names",
   "main": "checkExists.js",
