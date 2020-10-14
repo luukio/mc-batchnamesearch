@@ -25,7 +25,7 @@ let counter = 0;
 //Each request allows for 10 usernames
 const totalRequests = Math.round(dictionary.length / 10);
 
-const letsRoll = () => {
+const letsRoll = async () => {
 
     //Saving after every 50 requests in case something breaks
     if (counter % 16 == 0 && counter != 0) {
