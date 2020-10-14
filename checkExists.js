@@ -28,7 +28,7 @@ const totalRequests = Math.round(dictionary.length / 10);
 const letsRoll = () => {
 
     //Saving after every 50 requests in case something breaks
-    if (counter % 10 == 0 && counter != 0) {
+    if (counter % 16 == 0 && counter != 0) {
         //Sort them by length
         availableNames.sort((a, b) => a.length - b.length);
         //Temp write to file
@@ -41,11 +41,9 @@ const letsRoll = () => {
     //Main loop, keep going until we reach totalRequests
     if (counter < totalRequests) {
         //Take next 10 names and check if they are available
-        getAvailableNames(dictionary.splice(0, 10)).then(names => {
-            availableNames.push(...names);
-            console.log("Currently at " + counter + "/" + totalRequests + ", found: " + names.join(","));
-        }).catch(e => console.log(e));
-
+        const names = await getAvailableNames(dictionary.splice(0, 10)).catch(e => console.log(e));
+        availableNames.push(...names);
+        console.log("Currently at " + counter + "/" + totalRequests + ", found: " + names.join(","));
         counter++;
 
     } else {
