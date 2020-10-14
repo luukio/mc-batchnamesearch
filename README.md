@@ -7,10 +7,10 @@ Quick batch search of names in JSON file (dictionary with 3 to 6 letter words pr
 ```
 yarn start
 ```
-First checks basic availability with this command. It runs `checkExists.js` and returns a JSON array that can go straight in the deep search. 
+First checks basic availability with this command. It runs `checkExists.js` and finishes with a JSON array file that can go straight in the deep search. 
 
 
 ```
 yarn deepsearch
 ```
-Properly checks if its available now, soon or blocked, much slower than the first command. It runs `checkDates.js` and returns a JSON object.
+Properly checks if its available now, soon or blocked, much slower than the first command. It runs `checkDates.js` and finishes with a JSON object file.
